@@ -8,7 +8,7 @@ function App() {
     useEffect(() => {
         const fetchWallpapers = async () => {
             try {
-                const response = await axios.get('http://localhost:5500/api/wallpapers'); 
+                const response = await axios.get('https://backend-instafolioo-1.onrender.com/api/wallpapers'); 
                 setWallpapers(response.data);
             } catch (error) {
                 console.error('Error fetching wallpapers:', error);
